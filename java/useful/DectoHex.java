@@ -29,7 +29,7 @@ public class DectoHex {
                 case 15:
                     hexa[i] = "f";
                     break;
-                /*   case 0:        //this is an exception for the number 0, because if the remainder is 0, the program will print "null"
+                /*   case 0:        //this is an exception for the number 0, because if the remainder is 0, the program will print "null".
                     hexa[i] = "0";
                     break;
                 */
