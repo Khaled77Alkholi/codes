@@ -1,0 +1,30 @@
+import java.util.*;
+
+
+
+
+public class DectoBin {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int dec, i = 0, n = 0;
+        int[] bin = new int[9999];
+        System.out.print("Enter a decimal value: ");
+        dec = in.nextInt();
+        while(dec != 0) {
+            bin[i] = dec%2;
+            i++;
+            n++;
+            dec/=2;
+        }
+
+        int[] rbin = new int[n];
+        for(int j = 0; j<n; j++) {
+            rbin[j] = bin[n-j-1];
+        }
+
+        for(int j = 0; j<n; j++) {
+            System.out.print(rbin[j]);
+        }
+    }
+}
